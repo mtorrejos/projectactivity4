@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A simple calculator web app with CI/CD pipeline",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
