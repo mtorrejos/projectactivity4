@@ -20,15 +20,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '16'
-        
-    - name: Install package.json
-      run: npm init -y
 
     - name: Install dependencies
       run: npm install
-      
-    - name: Install Jest
-      run: npm install --save-dev jest
 
     - name: Run Tests
       run: npm test
