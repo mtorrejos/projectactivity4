@@ -1,4 +1,4 @@
-const calculateExpression = require('../calculator');
+import calculateExpression from '../calculator.js';
 
 describe("Calculator Tests", () => {
   test("adds numbers correctly", () => {
