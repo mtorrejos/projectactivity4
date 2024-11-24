@@ -1,4 +1,4 @@
-import calculateExpression from 'calculator';
+import calculateExpression from './calculator.js';
 
 window.appendToDisplay = function (value) {
   const display = document.getElementById("display");
