@@ -1,4 +1,4 @@
-export default function calculateExpression(expression) {
+import default function calculateExpression(expression) {
   if (!expression || expression.trim() === "") {
     throw new Error("Invalid expression: Empty input");
   }
