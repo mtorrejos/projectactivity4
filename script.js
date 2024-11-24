@@ -1,23 +1,23 @@
-const calculateExpression = require('./calculator');
+import calculateExpression from './calculator.js';
 
-function appendToDisplay(value) {
+window.appendToDisplay = function (value) {
   const display = document.getElementById("display");
   if (display.innerText === "0") {
     display.innerText = value;
   } else {
     display.innerText += value;
   }
-}
+};
 
-function clearDisplay() {
+window.clearDisplay = function () {
   document.getElementById("display").innerText = "0";
-}
+};
 
-function calculate() {
+window.calculate = function () {
   const display = document.getElementById("display");
   try {
     display.innerText = calculateExpression(display.innerText);
   } catch {
     display.innerText = "Error";
   }
-}
+};
